@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+    <style type="text/css">
+        body{font-size:12px;font-family: "微软雅黑";}
+        h1{color:#2A37B3;font-size:35px}
+        #btn{background-color:#1F69B3}
+        #btn:hover{background-color:#2189F1}
+    </style>
+
+<body>
+    <h1 >发布会管理</h1>
+    <form method="post" action="/login_action/">
+        <input name="username" type="text" placeholder="username" > <br>
+        <input name="password" type="password" placeholder="password" > <br>
+        
+        {{ error_info }} <br />
+        <button id="btn" type="submit"><font color="white">登&nbsp;&nbsp;录</font></button>
+        {% csrf_token %}
+    </form>
+</body>
+
+</html>

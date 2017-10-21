@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171019 16:54:09.397" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="D:\0A工作培训\克隆的代码\最新的克隆代码\DCMNFV_TEST_AUTOMATION_MyDjango_Projects\MyDjango_Projects_Test\Tests\Mytest.robot" id="s1" name="Mytest">
+<test id="s1-t1" name="Test My Library">
+<kw name="My Library">
+<kw name="Add" library="MyTestLibrary">
+<doc>用于计算a和b相加的结果，例如：</doc>
+<arguments>
+<arg>10</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${result1}</var>
+</assign>
+<msg timestamp="20171019 16:54:09.431" level="INFO">${result1} = 20</msg>
+<status status="PASS" endtime="20171019 16:54:09.431" starttime="20171019 16:54:09.431"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${result1}</arg>
+</arguments>
+<status status="PASS" endtime="20171019 16:54:09.432" starttime="20171019 16:54:09.431"></status>
+</kw>
+<kw name="Sub" library="MyTestLibrary">
+<doc>用于计算a和b相减的结果，例如：</doc>
+<arguments>
+<arg>10</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${result2}</var>
+</assign>
+<msg timestamp="20171019 16:54:09.432" level="INFO">${result2} = 0</msg>
+<status status="PASS" endtime="20171019 16:54:09.432" starttime="20171019 16:54:09.432"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${result2}</arg>
+</arguments>
+<status status="PASS" endtime="20171019 16:54:09.433" starttime="20171019 16:54:09.432"></status>
+</kw>
+<kw name="Mul" library="MyTestLibrary">
+<doc>返回两个数值的乘积，例如：</doc>
+<arguments>
+<arg>2</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${result3}</var>
+</assign>
+<msg timestamp="20171019 16:54:09.433" level="INFO">${result3} = 20</msg>
+<status status="PASS" endtime="20171019 16:54:09.433" starttime="20171019 16:54:09.433"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${result3}</arg>
+</arguments>
+<status status="PASS" endtime="20171019 16:54:09.434" starttime="20171019 16:54:09.433"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${result1}==${result3}</arg>
+</arguments>
+<status status="PASS" endtime="20171019 16:54:09.434" starttime="20171019 16:54:09.434"></status>
+</kw>
+<status status="PASS" endtime="20171019 16:54:09.435" starttime="20171019 16:54:09.431"></status>
+</kw>
+<status status="PASS" endtime="20171019 16:54:09.435" critical="yes" starttime="20171019 16:54:09.430"></status>
+</test>
+<status status="PASS" endtime="20171019 16:54:09.437" starttime="20171019 16:54:09.400"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Mytest" pass="1">Mytest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
